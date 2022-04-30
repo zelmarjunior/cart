@@ -28,12 +28,6 @@ header i {
   display: none;
 }
 
-.backdround {
-  background-image: url(../img/bg-desktop-light.jpg);
-  height: 200px;
-  background-size: cover;
-}
-
 #container-cart {
   display: flex;
   flex-flow: column;
@@ -155,7 +149,7 @@ header i {
 /* telas menores que 480px */
 @media screen and (max-width: 480px) {
   .backdround img {
-    width: 230%;
+
   }
 
   .logo img {
@@ -168,7 +162,7 @@ header i {
   }
 
   .container {
-    top: 30px;
+    top: 135px;
     width: 100%;
   }
 
@@ -178,5 +172,9 @@ header i {
 
   .produto {
     width: 95%;
+    padding-bottom: 17px;
+  }
+  p {
+    margin-bottom: 0;
   }
 }
