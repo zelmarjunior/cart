@@ -10,7 +10,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 60px;
+  top: 170px;
   right: 0;
   left: 0;
   width: 650px;
@@ -154,8 +154,8 @@ header i {
 
 /* telas menores que 480px */
 @media screen and (max-width: 480px) {
-  .backdround {
-    background-size: inherit;
+  .backdround img {
+    width: 230%;
   }
 
   .logo img {
