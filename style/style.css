@@ -1,0 +1,182 @@
+body {
+  background-color: #e4e5f1;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  width: 650px;
+  ;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+header i {
+  display: none;
+}
+
+.backdround {
+  background-image: url(/img/bg-desktop-light.jpg);
+  height: 200px;
+  background-size: cover;
+}
+
+#container-cart {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  color: whitesmoke;
+}
+
+.produto {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1vh 1vh 1vh 1vh;
+  background-color: aliceblue;
+  border-radius: .25rem;
+  width: 600px;
+  box-shadow: cral;
+}
+
+.nome {
+  font-size: medium;
+  font-weight: bold;
+  flex-grow: 2;
+  max-width: 200px;
+  box-sizing: content-box
+}
+
+.autor {
+  font-size: smaller;
+  font-weight: normal;
+  color: grey;
+  margin-bottom: 0;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: small;
+}
+
+.gift {
+  font-size: 10px;
+}
+
+.delete {
+  width: 30px;
+  margin: 0 15px;
+  opacity: 1;
+}
+
+.delete:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.preco,
+.qtd {
+  font-size: small;
+  margin: 0 1vh;
+}
+
+.miniatura {
+  padding: 1vh;
+  max-width: 15vh;
+  height: auto;
+  margin: 1vh;
+}
+
+.logo img {
+  padding: 2vh;
+  max-width: 24vh;
+  height: auto;
+  animation-duration: 1.5s;
+  animation-name: apear;
+}
+
+@keyframes apear {
+  from {
+    opacity: 0.3;
+    padding: 3vh;
+  }
+
+  to {
+    opacity: 1;
+    padding: 2vh;
+  }
+}
+
+#total {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn-add-cart {
+  margin: 15px 15px 15px 0;
+  width: 140px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7376e5;
+  border-color: #7376e5;
+}
+
+/* telas menores que 480px */
+@media screen and (max-width: 480px) {
+  .backdround {
+    background-size: inherit;
+  }
+
+  .logo img {
+    padding: 2vh;
+    max-width: 14vh;
+  }
+
+  .titulo {
+    
+  }
+
+  .container {
+    top: 30px;
+    width: 100%;
+  }
+
+  #container-cart {
+    flex-wrap: initial;
+  }
+
+  .produto {
+    width: 95%;
+  }
+}
